@@ -5,6 +5,11 @@
     tools:context="com.example.junli.nav_drawer_example.Home_Fragement">
 
     <!-- TODO: Update blank fragment layout -->
+    <!--<ImageView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:src=""-->
+        <!--/>-->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"

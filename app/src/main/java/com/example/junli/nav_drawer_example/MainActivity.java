@@ -95,41 +95,7 @@ public class MainActivity extends AppCompatActivity
             fragmentTransaction.commit();
             getSupportActionBar().setTitle("Home Fragment");
             item.setChecked(true);
-        } else if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
-        } else if (id == R.id.nav_event){
-            ArrayList<Event> events = new ArrayList<>();
-
-            events.add(new Event("Apple", "001 Heaven Ave", "apple", "9-11-2016", 100));
-            events.add(new Event("MicroSoft", "002 Heaven Ave", "Rice", "9-11-2016", 100));
-            events.add(new Event("Google", "000 Heaven Ave", "Dessert", "9-11-2016", 100));
-            events.add(new Event("Apple", "001 Heaven Ave", "apple", "9-11-2016", 100));
-            events.add(new Event("MicroSoft", "002 Heaven Ave", "Rice", "9-11-2016", 100));
-            events.add(new Event("Google", "000 Heaven Ave", "Dessert", "9-11-2016", 100));
-            events.add(new Event("Apple", "001 Heaven Ave", "apple", "9-11-2016", 100));
-            events.add(new Event("MicroSoft", "002 Heaven Ave", "Rice", "9-11-2016", 100));
-            events.add(new Event("Google", "000 Heaven Ave", "Dessert", "9-11-2016", 100));
-            events.add(new Event("Apple", "001 Heaven Ave", "apple", "9-11-2016", 100));
-            events.add(new Event("MicroSoft", "002 Heaven Ave", "Rice", "9-11-2016", 100));
-            events.add(new Event("Google", "000 Heaven Ave", "Dessert", "9-11-2016", 100));
-            events.add(new Event("Apple", "001 Heaven Ave", "apple", "9-11-2016", 100));
-            events.add(new Event("MicroSoft", "002 Heaven Ave", "Rice", "9-11-2016", 100));
-            events.add(new Event("Google", "000 Heaven Ave", "Dessert", "9-11-2016", 100));
-            events.add(new Event("Apple", "001 Heaven Ave", "apple", "9-11-2016", 100));
-            events.add(new Event("MicroSoft", "002 Heaven Ave", "Rice", "9-11-2016", 100));
-            events.add(new Event("Google", "000 Heaven Ave", "Dessert", "9-11-2016", 100));
-            EventAdapter arrayAdapter = new EventAdapter(this, events);
-            ListView listView = (ListView) findViewById(R.id.list_item);
+        }  else if (id == R.id.nav_event){
             //listView.setAdapter(arrayAdapter);
             fragmentTransaction = getSupportFragmentManager().beginTransaction();
             fragmentTransaction.replace(R.id.main_container, new Event_Fragment());
